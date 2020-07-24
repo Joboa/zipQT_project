@@ -1,0 +1,16 @@
+.container-1{
+    border: 1px solid black;
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.img-1 {
+    height: 40%;
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
