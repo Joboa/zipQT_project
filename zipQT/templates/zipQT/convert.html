@@ -1,5 +1,60 @@
 {% extends "zipQT/base.html" %}
-{% block content %}
-  <h2>Import a text file (.txt)</h2>
+{% load static %}
 
-{% endblock content%}
+{% block content %}
+
+<style>
+  .custom-file-input {
+    width:50% !important;
+  }
+
+  .upload-fle {
+    margin-top: 2%;
+    margin-bottom: 10px;
+  }
+
+  .container-file {
+    margin-left: 5%;
+  }
+
+  .upload-me {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+</style>
+<div class="container-file">
+  <h2 class="upload-fle">Upload file:</h2>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input
+      type="file"
+      name="document"
+      style="border: 1px solid black; padding: 5px;"
+      required="required"
+    />
+    <p class="upload-me">
+      <button type="submit" class="btn btn-primary lg">Upload file</button>
+    </p>
+  </form>
+
+  <p></p>
+</div>
+
+<!---
+<form action="/file-upload"
+      method="post"
+      class="dropzone"
+      id="my-awesome-dropzone"
+      enctype="multipart/form-data">
+  {% csrf_token %}
+</form>
+
+<div class="custom-file" class='browse-me'>
+  <input type="file" class="custom-file-input" id="customFile" class='browse-me'> 
+  <label class="custom-file-label" for="customFile">Choose file</label>
+</div>
+-->
+
+{% endblock %}
+  

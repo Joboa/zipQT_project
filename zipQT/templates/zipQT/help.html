@@ -1,5 +1,59 @@
 {% extends "zipQT/base.html" %}
 {% block content %}
-  <h1>This is the help page!</h1>
+
+<style>
+.container-2 {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+div {
+  font-family: 'Lucida Console'
+}
+
+.bold-me {
+  font-weight: bold;
+}
+</style>
+
+<div class="container-2">
+  zipQT converts a <span class="bold-me">.txt file</span> to <span class="bold-me">QTI zip file</span> for multiple choice questions. <br>
+  <span class="bold-me">NOTE:</span> Only <span class="bold-me">.txt</span> files should be uploaded.
+</div>
+
+<div class="container-2">
+  <span class="bold-me">How to use zipQT</span>
+    <ul>
+      <li>On the 'Home Page', click on Go to convert file <span class="bold-me">(Read "Before choosing a file")</span></li>
+      <li>Click on choose file and then upload </li>
+      <li>This therefere generates a QTI zip file and download automatically</li>
+    </ul>
+</div>
+
+<div class="container-2">
+  <span class="bold-me">Before choosing a file</span>
+  <p>The format of the <span class="bold-me">.txt</span> file should be in the form as shown below with the correct
+    answers indicated with <span class="bold-me">(*)</span></p>
+</div>
+
+<div class="container-2">
+  <h5>------------------------------------------------------------------------------</h5>
+  GROUP <br>
+  pick: 1 <br>
+  points per question: 1 <br> <br>
+  
+  1. Mango is a fruit. <br>
+  *a) true <br>
+  b)  false <br> <br>
+
+  2. Sum of 3 and 5 is <br>
+  a) 2 <br>
+  *b) 8 <br> <br>
+
+  END_GROUP <br>
+  <h5>------------------------------------------------------------------------------</h5>
+</div>
+
+<h5 class="container-2">Thank you for using ZipQT</h2>
 
 {% endblock content%}

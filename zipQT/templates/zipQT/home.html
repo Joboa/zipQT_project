@@ -3,17 +3,24 @@
 {% load static %}
 
 {% block content %}
+
+<style>
+  .centre-me {
+    padding-left: 5% !important;
+  }
+
+  
+</style>
  
   <div class="container">
     <div class="row">
       <div class="col">
-        <h3>Convert a text file to QTI zip format</h3>
+        <h3>Convert a text file to QTI zip file</h3>
       </div>
       <div class="col">
+        <!---->
         <img src="{% static 'zipQT/images/zip_file_download.svg' %}" alt="" class="img-1">
-        <a href='https://dryicons.com/icon/zip-file-download-1800'> Icon by Dryicons </a>
-
-        <a href="{% url 'zipQT-convert' %}" class="btn btn-primary">Go to convert file</a>
+        <a href="{% url 'zipQT-convert' %}" class="btn btn-primary" class="centre-me">Go to convert file</a>
       </div>
     </div>
 
