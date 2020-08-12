@@ -1,0 +1,19 @@
+GROUP
+pick: 1
+points per question: 1
+
+1. A load cell is calibrated in an environment at a temperature of 21ºC and has the following deflection/load characteristics: When used in an environment at 35ºC, its characteristics changes to the following: Determine the sensitivity at 21ºC
+*a) 0.02
+b) 45.5
+c) 0.023
+d) 0.022
+e) 50
+
+2. A load cell is calibrated in an environment at a temperature of 21ºC and has the following deflection/load characteristics: When used in an environment at 35ºC, its characteristics changes to the following: Find the sensitivity at 35ºC.
+a) 0.02
+b) 45.5
+c) 0.023
+*d) 0.022
+e) 43.5z
+
+END_GROUP
