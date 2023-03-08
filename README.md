@@ -1,3 +1,2 @@
 # zipQT_project
 converts a text file to QTI zip file
-The project is still ongoing .....
